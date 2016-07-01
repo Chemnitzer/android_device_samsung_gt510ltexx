@@ -16,11 +16,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit from gt58wifixx device
-$(call inherit-product, device/samsung/gt58wifixx/device.mk)
+$(call inherit-product, device/samsung/gt510wifixx/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_gt58wifixx
-PRODUCT_DEVICE := gt58wifixx
+PRODUCT_NAME := full_gt510wifixx
+PRODUCT_DEVICE := gt510wifixx
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SM-T350
+PRODUCT_MODEL := SM-T550

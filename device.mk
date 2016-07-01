@@ -14,41 +14,39 @@
 #
 
 # Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/gt58wifixx/gt58wifixx-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/gt510wifixx/gt510wifixx-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # Device overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/gt58wifixx/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/gt510wifixx/overlay
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/samsung/gt58wifixx/audio/acdb/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
-    device/samsung/gt58wifixx/audio/acdb/General_cal.acdb:system/etc/General_cal.acdb \
-    device/samsung/gt58wifixx/audio/acdb/Global_cal.acdb:system/etc/Global_cal.acdb \
-    device/samsung/gt58wifixx/audio/acdb/Handset_cal.acdb:system/etc/Handset_cal.acdb \
-    device/samsung/gt58wifixx/audio/acdb/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
-    device/samsung/gt58wifixx/audio/acdb/Headset_cal.acdb:system/etc/Headset_cal.acdb \
-    device/samsung/gt58wifixx/audio/acdb/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
-    device/samsung/gt58wifixx/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/samsung/gt58wifixx/audio/Tfa9895.cnt:system/etc/Tfa9895.cnt
+    device/samsung/gt510wifixx/audio/acdb/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
+    device/samsung/gt510wifixx/audio/acdb/General_cal.acdb:system/etc/General_cal.acdb \
+    device/samsung/gt510wifixx/audio/acdb/Global_cal.acdb:system/etc/Global_cal.acdb \
+    device/samsung/gt510wifixx/audio/acdb/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
+    device/samsung/gt510wifixx/audio/acdb/Headset_cal.acdb:system/etc/Headset_cal.acdb \
+    device/samsung/gt510wifixx/audio/acdb/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
+    device/samsung/gt510wifixx/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/samsung/gt58wifixx/audio/audio_effects.conf:system/etc/audio_effects.conf \
-    device/samsung/gt58wifixx/audio/audio_policy.conf:system/etc/audio_policy.conf
+    device/samsung/gt510wifixx/audio/audio_effects.conf:system/etc/audio_effects.conf \
+    device/samsung/gt510wifixx/audio/audio_policy.conf:system/etc/audio_policy.conf
 
 # GPS
 PRODUCT_COPY_FILES += \
-    device/samsung/gt58wifixx/configs/gps.conf:system/etc/gps.conf
+    device/samsung/gt510wifixx/configs/gps.conf:system/etc/gps.conf
 
 # Media
 PRODUCT_COPY_FILES += \
-    device/samsung/gt58wifixx/configs/media_codecs.xml:system/etc/media_codecs.xml \
-    device/samsung/gt58wifixx/configs/media_profiles.xml:system/etc/media_profiles.xml
+    device/samsung/gt510wifixx/configs/media_codecs.xml:system/etc/media_codecs.xml \
+    device/samsung/gt510wifixx/configs/media_profiles.xml:system/etc/media_profiles.xml
 
-# Inherit from gt58-common
+# Inherit from gt5-common
 $(call inherit-product, device/samsung/gt5-common/common.mk)
 

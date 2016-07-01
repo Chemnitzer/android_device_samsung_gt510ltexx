@@ -17,7 +17,7 @@
 $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/apns.mk)
 
 # Product makefile
-$(call inherit-product, device/samsung/gt58wifixx/full_gt58wifixx.mk)
+$(call inherit-product, device/samsung/gt510wifixx/full_gt510wifixx.mk)
 
 # Inherit some common evervolv stuff.
 $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/common_full_tablet_wifionly.mk)
@@ -31,12 +31,12 @@ BOOT_ANIMATION_SIZE := xga
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := ev_gt58wifixx
-PRODUCT_DEVICE := gt58wifixx
+PRODUCT_NAME := ev_gt510wifixx
+PRODUCT_DEVICE := gt510wifixx
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SM-T350
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=gt58wifixx TARGET_DEVICE=gt58wifi
+PRODUCT_MODEL := SM-T550
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=gt510wifixx TARGET_DEVICE=gt510wifi
 
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := sedo

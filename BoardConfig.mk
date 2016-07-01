@@ -24,10 +24,10 @@
 -include device/samsung/gt5-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
--include vendor/samsung/gt58wifixx/BoardConfigVendor.mk
+-include vendor/samsung/gt510wifixx/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := gt58wifi,gt58wifixx,SM-T350
+TARGET_OTA_ASSERT_DEVICE := gt510wifi,gt510wifixx,SM-T350,gt510lte,gt510ltexx,SM-T550
 
 # Kernel
-TARGET_KERNEL_CONFIG := gt58wifi_defconfig
+TARGET_KERNEL_CONFIG := gt510wifi_defconfig
