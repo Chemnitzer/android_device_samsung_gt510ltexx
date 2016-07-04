@@ -1,2 +1,2 @@
-# android_device_samsung_gt58wifixx
-Device tree for Samsung Galaxy Tab A 8.0 (SM-T350)
+# android_device_samsung_gt510ltexx
+Device tree for Samsung Galaxy Tab A 9.7 (SM-T555)
