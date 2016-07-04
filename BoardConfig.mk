@@ -23,6 +23,10 @@
 # Inherit from common
 -include device/samsung/gt5-common/BoardConfigCommon.mk
 
+# Custom RIL class
+BOARD_RIL_CLASS := ../../../device/samsung/gt510ltexx/ril/
+USE_DEVICE_SPECIFIC_DATASERVICES := true
+
 # Inherit from the proprietary version
 -include vendor/samsung/gt510ltexx/BoardConfigVendor.mk
 

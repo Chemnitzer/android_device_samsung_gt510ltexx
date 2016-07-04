@@ -23,6 +23,14 @@ TARGET_SCREEN_WIDTH := 720
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/gt510ltexx/overlay
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+
+# RIL
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.ril_class=SamsungA5RIL
+
 # Audio
 PRODUCT_COPY_FILES += \
     device/samsung/gt510ltexx/audio/acdb/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
