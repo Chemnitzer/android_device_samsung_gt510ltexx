@@ -36,7 +36,13 @@ PRODUCT_DEVICE := gt510ltexx
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SM-T555
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=gt510ltexx TARGET_DEVICE=gt510lte
+
+# Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += \
+  TARGET_DEVICE=gt510lte \
+  PRODUCT_NAME=gt510ltexx \
+  BUILD_FINGERPRINT=samsung/gt510ltexx/gt510lte:6.0.1/MMB29M/T550XXU1BPDA:user/release-keys \
+  PRIVATE_BUILD_DESC="gt510ltexx-user 6.0.1 MMB29M T550XXU1BPDA release-keys"
 
 # Set up the product codename
 PRODUCT_CODENAME := carus
