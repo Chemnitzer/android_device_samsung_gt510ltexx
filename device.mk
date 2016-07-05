@@ -16,10 +16,6 @@
 # Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/gt510ltexx/gt510ltexx-vendor.mk)
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
-
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/gt510ltexx/overlay
 
