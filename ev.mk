@@ -22,6 +22,9 @@ $(call inherit-product, device/samsung/gt510ltexx/full_gt510ltexx.mk)
 # Inherit some common evervolv stuff.
 $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/common_full_phone.mk)
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # Pull all dictionaries
 $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/dictionaries/intl.mk)
 
