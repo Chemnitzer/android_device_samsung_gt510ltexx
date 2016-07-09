@@ -27,6 +27,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=SamsungA5RIL
 
+# Ril Shim
+PRODUCT_PACKAGES += \
+    libril_shim
+
 # Audio
 PRODUCT_COPY_FILES += \
     device/samsung/gt510ltexx/audio/acdb/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
