@@ -1,0 +1,8 @@
+[
+  {
+    "repository": "android_device_samsung_gt5-common",
+    "target_path": "device/samsung/gt5-common",
+    "dep_type": "device"
+  }
+]
+
